@@ -38,7 +38,7 @@ public abstract class SchedulingAlgorithm {
 	 * @param processes
 	 */
 	public SchedulingAlgorithm(ArrayList<Process> processes){
-		this.processes = processes;
+		this.processes = new ArrayList<Process>(processes);
 		this.timeline = new ArrayList<Process>();
 	}
 	
